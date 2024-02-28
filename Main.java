@@ -1,5 +1,14 @@
 package cuentas;
 
+/**
+ * @author      Luis Andrés Piñero Diez <andres.lapd07@gmail.com>
+ * @version     1.0
+ * @since       1.0
+ */
+
+/**
+ * Clase principal del programa que gestiona una cuenta bancaria.
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -15,6 +24,11 @@ public class Main {
         operativa_cuenta(cuenta1, 695);
     }
 
+    /**
+     * Método que encapsula las operaciones con la cuenta.
+     * @param cuenta Cuenta bancaria sobre la que realizar operaciones.
+     * @param cantidad Cantidad a operar (ingresar o retirar).
+     */
     public static void operativa_cuenta(CCuenta cuenta, float cantidad) {
         try {
             cuenta.retirar(cantidad);
